@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "2bbb5ebe-0e20-4099-9515-c7ce53eee2ff",
+		"name": "Tipos_de_variaveis_collection_global_ambiente_UAT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25857341"
+	},
+	"item": [
+		{
+			"name": "https://serverest.dev/usuarios COLLECTIONserverest",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://{{serverestCOLLECTION}}.dev/usuarios",
+					"protocol": "https",
+					"host": [
+						"{{serverestCOLLECTION}}",
+						"dev"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://serverest.dev/usuarios GLOBALserverest",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://{{serverestGLOBAL}}.dev/usuarios",
+					"protocol": "https",
+					"host": [
+						"{{serverestGLOBAL}}",
+						"dev"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://serverest.dev/usuarios/ AMBIENTEserverest",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://{{servidor}}.dev/usuarios/?_id=0uId1ymfcvPHsRkR",
+					"protocol": "https",
+					"host": [
+						"{{servidor}}",
+						"dev"
+					],
+					"path": [
+						"usuarios",
+						""
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "0uId1ymfcvPHsRkR"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl -X 'GET' \\\r\n  'https://serverest.dev/usuarios/0uxuPY0cbmQhpEz1' \\\r\n  -H 'accept: application/json'"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "serverestCOLLECTION",
+			"value": "serverest"
+		}
+	]
+}
