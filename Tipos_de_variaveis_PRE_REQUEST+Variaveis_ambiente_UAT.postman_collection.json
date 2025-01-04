@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "975b7283-400c-4edd-8e8a-136adbae181a",
+		"name": "Tipos_de_variaveis_PRE_REQUEST+Variaveis_ambiente_UAT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25857341"
+	},
+	"item": [
+		{
+			"name": "https://serverest.dev/usuarios/ environment",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"variable_key\", \"1\");\r",
+							"pm.environment.set(\"variable_key2\", _.random(1, 100));\r",
+							"\r",
+							"// para imprimir informações no console do Postman\r",
+							"console.log(\"Response:\", pm.response);\r",
+							"\r",
+							"// Teste\r",
+							" pm.test(\"Request successful\", function() { \r",
+							"    if (pm.response) { pm.response.to.have.status(200); }\r",
+							"  else { console.log(\"Response is undefined\"); } });"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://serverest.dev/usuarios/?_id=0uId1ymfcvPHsRkR",
+					"protocol": "https",
+					"host": [
+						"serverest",
+						"dev"
+					],
+					"path": [
+						"usuarios",
+						""
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "0uId1ymfcvPHsRkR"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl -X 'GET' \\\r\n  'https://serverest.dev/usuarios/0uxuPY0cbmQhpEz1' \\\r\n  -H 'accept: application/json'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://serverest.dev/usuarios/ collectionVariables",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.collectionVariables.set(\"variable_key\", _.random(1, 100));"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://serverest.dev/usuarios/?_id=0uId1ymfcvPHsRkR",
+					"protocol": "https",
+					"host": [
+						"serverest",
+						"dev"
+					],
+					"path": [
+						"usuarios",
+						""
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "0uId1ymfcvPHsRkR"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl -X 'GET' \\\r\n  'https://serverest.dev/usuarios/0uxuPY0cbmQhpEz1' \\\r\n  -H 'accept: application/json'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://serverest.dev/usuarios/ globals",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.globals.set(\"variable_key\", _.random(1, 100));"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://serverest.dev/usuarios/?_id=0uId1ymfcvPHsRkR",
+					"protocol": "https",
+					"host": [
+						"serverest",
+						"dev"
+					],
+					"path": [
+						"usuarios",
+						""
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "0uId1ymfcvPHsRkR"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl -X 'GET' \\\r\n  'https://serverest.dev/usuarios/0uxuPY0cbmQhpEz1' \\\r\n  -H 'accept: application/json'"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "serverestCOLLECTION",
+			"value": "serverest"
+		},
+		{
+			"key": "variable_key",
+			"value": ""
+		}
+	]
+}
